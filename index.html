@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,7 +10,7 @@
     <meta name="description"
           content="Переход на российское ПО без простоев: подбор, аудит, внедрение, поддержка. Решения из реестра для бизнеса, госсектора, образования и ИТ.">
     <link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css">
-    <link rel="stylesheet" href="assets/theme/orange.css">
+    <link rel="stylesheet" href="assets/theme/orange.css" type="text/css">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
     <title>Бесшовный переход на российское программное обеспечение</title>
@@ -52,91 +52,116 @@
                         data-bs-target="#partnerModal">
                     Заказать
                 </button>
-                <div class="header__dropdown dropdown dropstart">
-                    <button class="dropdown__burger btn btn-secondary dropdown-toggle" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="dropdown__icon" src="assets/images/burger-menu.svg" alt="Открыть меню">
-                    </button>
-                    <ul class="dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li class="dropdown__list-item">
-                            <div class="dropdown__head">
-                                <a class="dropdown__logo" href="#" title="Логотип" target="_blank">
-                                    <img class="dropdown__images" src="assets/images/theme/orange/1c-rarus-logo.svg"
-                                         alt="Логотип 1С-Рарус" title="Логотип 1С-Рарус">
-                                </a>
-                                <svg class="dropdown__logo" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_458_1053)">
-                                        <path class="dropdown-bg-cross"
-                                              d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
-                                              fill="#0E0D0C"/>
-                                        <path d="M40.8269 16.4063L16.0781 41.155L19.1717 44.2486L43.9205 19.4999L40.8269 16.4063Z"
-                                              fill="#FBFBFB"/>
-                                        <path d="M43.9206 41.4526L19.1719 16.7039L16.0783 19.7975L40.827 44.5462L43.9206 41.4526Z"
-                                              fill="#FBFBFB"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_458_1053">
-                                            <rect width="60" height="60" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                <button type="button" class="modal__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerMenu">
+                    <img class="dropdown__icon" src="assets/images/burger-menu.svg" alt="Открыть меню">
+                </button>
+                <div class="modal fade" id="partnerMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal__dialog-dropdown">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="modal__menu">
+                                    <div class="modal__main">
+                                        <a class="modal__logo" href="#" title="Логотип" target="_blank">
+                                            <img class="modal__images" src="assets/images/theme/orange/1c-rarus-logo.svg"
+                                                 alt="Логотип 1С-Рарус" title="Логотип 1С-Рарус">
+                                        </a>
+                                        <button type="button" class="modal__btn-close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <svg class="modal__close" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_458_1053)">
+                                                    <path class="modal-cross"
+                                                          d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                                          fill="#0E0D0C"/>
+                                                    <path d="M40.8269 16.4063L16.0781 41.155L19.1717 44.2486L43.9205 19.4999L40.8269 16.4063Z"
+                                                          fill="#FBFBFB"/>
+                                                    <path d="M43.9206 41.4526L19.1719 16.7039L16.0783 19.7975L40.827 44.5462L43.9206 41.4526Z"
+                                                          fill="#FBFBFB"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_1053">
+                                                        <rect width="60" height="60" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="modal__elements">
+                                        <li class="modal__element">
+                                            <a class="modal-link" href="#" title="Продукты" target="_blank">
+                                                Продукты
+                                            </a>
+                                        </li>
+                                        <li class="modal__element">
+                                            <a class="modal-link" href="#" title="Преимущества" target="_blank">
+                                                Преимущества
+                                            </a>
+                                        </li>
+                                        <li class="modal__element">
+                                            <a class="modal-link" href="#" title="Акции" target="_blank">
+                                                Акции
+                                            </a>
+                                        </li>
+                                        <li class="modal__element">
+                                            <a class="modal-link" href="#" title="Контакты" target="_blank">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="button dropdown__button" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#partnerModal">
+                                        Заказать
+                                    </button>
+                                </div>
                             </div>
-                        </li>
-                        <li class="dropdown__list-item">
-                            <a class="dropdown-item dropdown-link" href="#" title="Продукты" target="_blank">
-                                Продукты
-                            </a>
-                        </li>
-                        <li class="dropdown__list-item">
-                            <a class="dropdown-item dropdown-link" href="#" title="Преимущества" target="_blank">
-                                Преимущества
-                            </a>
-                        </li>
-                        <li class="dropdown__list-item">
-                            <a class="dropdown-item dropdown-link" href="#" title="Акции" target="_blank">
-                                Акции
-                            </a>
-                        </li>
-                        <li class="dropdown__list-item">
-                            <a class="dropdown-item dropdown-link" href="#" title="Контакты" target="_blank">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="dropdown__list-item dropdown-item">
-                            <button class="button dropdown__button" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#partnerModal">
-                                Заказать
-                            </button>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
     <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="partnerModalLabel" aria-hidden="true"
          aria-modal="true" role="dialog">
-        <div class="modal__dialog modal-dialog">
+        <div class="modal__dialog modal-dialog modal-dialog-centered">
             <div class="modal__content">
                 <picture class="modal__picture">
                     <source srcset="assets/images/theme/orange/modal-img.webp 1x, assets/images/theme/orange/modal-img@x2.webp 2x"
-                            media="(min-width: 1400px)" type="image/webp">
+                            media="(min-width: 835px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/modal-img.png 1x, assets/images/theme/orange/modal-img@x2.png 2x"
-                            media="(min-width: 1400px)" type="image/png">
+                            media="(min-width: 835px)" type="image/png">
                     <source srcset="assets/images/theme/orange/modal-img-md.webp 1x, assets/images/theme/orange/modal-img-md@x2.webp 2x"
-                            media="(min-width: 391px) and (max-width: 1024px)" type="image/webp">
+                            media="(min-width: 481px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/modal-img-md.png 1x, assets/images/theme/orange/modal-img-md@x2.png 2x"
-                            media="(min-width: 391px) and (max-width: 1024px)" type="image/png">
+                            media="(min-width: 481px)" type="image/png">
                     <source srcset="assets/images/theme/orange/modal-img-sm.webp 1x, assets/images/theme/orange/modal-img-sm@x2.webp 2x"
-                            media="(max-width: 390)" type="image/webp">
+                            media="(max-width: 480px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/modal-img-sm.png 1x, assets/images/theme/orange/modal-img-sm@x2.png 2x"
-                            media="(max-width: 390)" type="image/png">
+                            media="(max-width: 480px)" type="image/png">
                     <img class="modal__image" src="assets/images/theme/orange/modal-img.png"
                          alt="Фоновое изображение" loading="lazy">
                 </picture>
                 <div class="modal__block">
                     <div class="modal__header">
                         <h2 class="modal__title title" id="partnerModalLabel">Заявка на консультацию</h2>
+                        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg class="modal__cross" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_458_1053)">
+                                    <path class="modal-bg-cross"
+                                          d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                          fill="#0E0D0C"/>
+                                    <path d="M40.8269 16.4063L16.0781 41.155L19.1717 44.2486L43.9205 19.4999L40.8269 16.4063Z"
+                                          fill="#FBFBFB"/>
+                                    <path d="M43.9206 41.4526L19.1719 16.7039L16.0783 19.7975L40.827 44.5462L43.9206 41.4526Z"
+                                          fill="#FBFBFB"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_458_1053">
+                                        <rect width="60" height="60" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
                     </div>
                     <div class="modal__body">
                         <form action="#" method="post">
@@ -210,7 +235,8 @@
                                            required>
                                     <label class="modal__label"
                                            for="flexCheckChecked">
-                                        Даю согласие на обработку персональных данных
+                                        Даю <a href="#" class="modal__link link" target="_blank"
+                                               title="Согласие на обработку персональных данных">согласие на обработку персональных данных</a>
                                     </label>
                                 </div>
                             </fieldset>
@@ -220,12 +246,15 @@
                         </form>
                     </div>
                 </div>
-<!--                <div class="modal__success">-->
-<!--                    <div class="modal__container">-->
-<!--                        <p class="modal__title title">Ваша заявка принята!</p>-->
-<!--                        <p class="modal__title title">Мы свяжемся с вами в&nbsp;ближайшее время</p>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--Раскомментируйте код для использования сообщение об успешной отправке формы
+
+                <div class="modal__success">
+                   <div class="modal__container">
+                        <p class="modal__title title">Ваша заявка принята!</p>
+                       <p class="modal__title title">Мы свяжемся с вами в&nbsp;ближайшее время</p>
+                    </div>
+               </div>
+               -->
             </div>
         </div>
     </div>
@@ -236,17 +265,17 @@
         <section class="transition">
             <picture class="transition__picture">
                 <source srcset="assets/images/theme/orange/transition-img.webp 1x, assets/images/theme/orange/transition-img@x2.webp 2x"
-                        media="(min-width: 1400px)" type="image/webp">
+                        media="(min-width: 1200px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/transition-img.png 1x, assets/images/theme/orange/transition-img@x2.png 2x"
-                        media="(min-width: 1400px)" type="image/png">
+                        media="(min-width: 1200px)" type="image/png">
                 <source srcset="assets/images/theme/orange/transition-img-md.webp 1x, assets/images/theme/orange/transition-img-md@x2.webp 2x"
-                        media="(min-width: 391px) and (max-width: 1024px)" type="image/webp">
+                        media="(min-width: 577px) and (max-width: 1199px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/transition-img-md.png 1x, assets/images/theme/orange/transition-img-md@x2.png 2x"
-                        media="(min-width: 391px) and (max-width: 1024px)" type="image/png">
+                        media="(min-width: 577px) and (max-width: 1199px)" type="image/png">
                 <source srcset="assets/images/theme/orange/transition-img-sm.webp 1x, assets/images/theme/orange/transition-img-sm@x2.webp 2x"
-                        media="(max-width: 390px)" type="image/webp">
+                        media="(max-width: 576px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/transition-img-sm.png 1x, assets/images/theme/orange/transition-img-sm@x2.png 2x"
-                        media="(max-width: 390px)" type="image/png">
+                        media="(max-width: 576px)" type="image/png">
                 <img class="transition__image" src="assets/images/theme/orange/transition-img.png"
                      alt="Фоновое изображение" loading="lazy">
             </picture>
@@ -346,17 +375,17 @@
                 <div class="chosen__image">
                     <picture class="chosen__picture">
                         <source srcset="assets/images/theme/orange/chosen-image.webp 1x, assets/images/theme/orange/chosen-image@x2.webp 2x"
-                                media="(min-width: 1400px)" type="image/webp">
+                                media="(min-width: 1200px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/chosen-image.png 1x, assets/images/theme/orange/chosen-image@x2.png 2x"
-                                media="(min-width: 1400px)" type="image/png">
+                                media="(min-width: 1200px)" type="image/png">
                         <source srcset="assets/images/theme/orange/chosen-image-md.webp 1x, assets/images/theme/orange/chosen-image-md@x2.webp 2x"
-                                media="(min-width: 391px) and (max-width: 1024px)" type="image/webp">
+                                media="(min-width: 575px) and (max-width: 1024px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/chosen-image-md.png 1x, assets/images/theme/orange/chosen-image-md@x2.png 2x"
-                                media="(min-width: 391px) and (max-width: 1024px)" type="image/png">
+                                media="(min-width: 575px) and (max-width: 1024px)" type="image/png">
                         <source srcset="assets/images/theme/orange/chosen-image-sm.webp 1x, assets/images/theme/orange/chosen-image-sm@x2.webp 2x"
-                                media="(max-width: 390px)" type="image/webp">
+                                media="(max-width: 576px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/chosen-image-sm.png 1x, assets/images/theme/orange/chosen-image-sm@x2.png 2x"
-                                media="(max-width: 390px)" type="image/png">
+                                media="(max-width: 576px)" type="image/png">
                         <img class="chosen__images" src="assets/images/theme/orange/chosen-image.png"
                              alt="Фоновое изображение" loading="lazy">
                     </picture>
@@ -375,13 +404,13 @@
                         <source srcset="assets/images/theme/orange/advantages-img.png 1x, assets/images/theme/orange/advantages-img@x2.png 2x"
                                 media="(min-width: 1200px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-md.webp 1x, assets/images/theme/orange/advantages-img-md@x2.webp 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/webp">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-md.png 1x, assets/images/theme/orange/advantages-img-md@x2.png 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/png">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.webp 1x, assets/images/theme/orange/advantages-img-sm@x2.webp 2x"
-                                media="(max-width: 390px)" type="image/webp">
+                                media="(max-width: 576px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.png 1x, assets/images/theme/orange/advantages-img-sm@x2.png 2x"
-                                media="(max-width: 390px)" type="image/png">
+                                media="(max-width: 576px)" type="image/png">
                         <img class="advantages__image" src="assets/images/theme/orange/advantages-img.png" alt="Описание изображения" loading="lazy">
                     </picture>
                     <div class="advantages__content">
@@ -399,13 +428,13 @@
                         <source srcset="assets/images/theme/orange/advantages-img.png 1x, assets/images/theme/orange/advantages-img@x2.png 2x"
                                 media="(min-width: 1200px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-md.webp 1x, assets/images/theme/orange/advantages-img-md@x2.webp 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/webp">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-md.png 1x, assets/images/theme/orange/advantages-img-md@x2.png 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/png">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.webp 1x, assets/images/theme/orange/advantages-img-sm@x2.webp 2x"
-                                media="(max-width: 390px)" type="image/webp">
+                                media="(max-width: 576px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.png 1x, assets/images/theme/orange/advantages-img-sm@x2.png 2x"
-                                media="(max-width: 390px)" type="image/png">
+                                media="(max-width: 576px)" type="image/png">
                         <img class="advantages__image" src="assets/images/theme/orange/advantages-img.png" alt="Описание изображения" loading="lazy">
                     </picture>
                     <div class="advantages__content">
@@ -422,13 +451,13 @@
                         <source srcset="assets/images/theme/orange/advantages-img.png 1x, assets/images/theme/orange/advantages-img@x2.png 2x"
                                 media="(min-width: 1200px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-md.webp 1x, assets/images/theme/orange/advantages-img-md@x2.webp 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/webp">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-md.png 1x, assets/images/theme/orange/advantages-img-md@x2.png 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/png">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.webp 1x, assets/images/theme/orange/advantages-img-sm@x2.webp 2x"
-                                media="(max-width: 390px)" type="image/webp">
+                                media="(max-width: 576px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.png 1x, assets/images/theme/orange/advantages-img-sm@x2.png 2x"
-                                media="(max-width: 390px)" type="image/png">
+                                media="(max-width: 576px)" type="image/png">
                         <img class="advantages__image" src="assets/images/theme/orange/advantages-img.png" alt="Описание изображения" loading="lazy">
                     </picture>
                     <div class="advantages__content">
@@ -445,13 +474,13 @@
                         <source srcset="assets/images/theme/orange/advantages-img.png 1x, assets/images/theme/orange/advantages-img@x2.png 2x"
                                 media="(min-width: 1200px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-md.webp 1x, assets/images/theme/orange/advantages-img-md@x2.webp 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/webp">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-md.png 1x, assets/images/theme/orange/advantages-img-md@x2.png 2x"
-                                media="(min-width: 768px) and (max-width: 1200px)" type="image/png">
+                                media="(min-width: 576px) and (max-width: 1199px)" type="image/png">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.webp 1x, assets/images/theme/orange/advantages-img-sm@x2.webp 2x"
-                                media="(max-width: 390px)" type="image/webp">
+                                media="(max-width: 576px)" type="image/webp">
                         <source srcset="assets/images/theme/orange/advantages-img-sm.png 1x, assets/images/theme/orange/advantages-img-sm@x2.png 2x"
-                                media="(max-width: 390px)" type="image/png">
+                                media="(max-width: 576px)" type="image/png">
                         <img class="advantages__image" src="assets/images/theme/orange/advantages-img.png" alt="Описание изображения" loading="lazy">
                     </picture>
                     <div class="advantages__content">
@@ -564,6 +593,9 @@
                     <div class="portfolio__item">
                         <img class="portfolio__images" src="assets/images/logo/tantor.svg" alt="Логотип Tantor">
                     </div>
+                    <div class="portfolio__item">
+                        <img class="portfolio__images" src="assets/images/logo/communigate.svg" alt="Логотип Communigate">
+                    </div>
                 </div>
             </div>
             <div class="portfolio__block">
@@ -641,17 +673,17 @@
             <div class="special__block">
                 <picture class="special__picture">
                     <source srcset="assets/images/theme/orange/special-img.webp 1x, assets/images/theme/orange/special-img@x2.webp 2x"
-                            media="(min-width: 1400px)" type="image/webp">
+                            media="(min-width: 1200px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/special-img.png 1x, assets/images/theme/orange/special-img@x2.png 2x"
-                            media="(min-width: 1400px)" type="image/png">
+                            media="(min-width: 1200px)" type="image/png">
                     <source srcset="assets/images/theme/orange/special-img-md.webp 1x, assets/images/theme/orange/special-img-md@x2.webp 2x"
-                            media="(min-width: 391px) and (max-width: 1024px)" type="image/webp">
+                            media="(min-width: 576px) and (max-width: 1199px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/special-img-md.png 1x, assets/images/theme/orange/special-img-md@x2.png 2x"
-                            media="(min-width: 391px) and (max-width: 1024px)" type="image/png">
+                            media="(min-width: 576px) and (max-width: 1199px)" type="image/png">
                     <source srcset="assets/images/theme/orange/special-img-sm.webp 1x, assets/images/theme/orange/special-img-sm@x2.webp 2x"
-                            media="(max-width: 390px)" type="image/webp">
+                            media="(max-width: 576px)" type="image/webp">
                     <source srcset="assets/images/theme/orange/special-img-sm.png 1x, assets/images/theme/orange/special-img-sm@x2.png 2x"
-                            media="(max-width: 390px)" type="image/png">
+                            media="(max-width: 576px)" type="image/png">
                     <img class="special__images" src="assets/images/theme/orange/special-img.png"
                          alt="декоративное изображение" title="Специальные предложения" loading="lazy">
                 </picture>
@@ -697,17 +729,17 @@
         <section class="about">
             <picture class="about__picture">
                 <source srcset="assets/images/theme/orange/about-img.webp 1x, assets/images/theme/orange/about-img@x2.webp 2x"
-                        media="(min-width: 1400px)" type="image/webp">
+                        media="(min-width: 1200px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/about-img.png 1x, assets/images/theme/orange/about-img@x2.png 2x"
-                        media="(min-width: 1400px)" type="image/png">
+                        media="(min-width: 1200px)" type="image/png">
                 <source srcset="assets/images/theme/orange/about-img-md.webp 1x, assets/images/theme/orange/about-img-md@x2.webp 2x"
-                        media="(min-width: 391px) and (max-width: 1024px)" type="image/webp">
+                        media="(min-width: 576px) and (max-width: 1024px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/about-img-md.png 1x, assets/images/theme/orange/about-img-md@x2.png 2x"
-                        media="(min-width: 391px) and (max-width: 1024px)" type="image/png">
+                        media="(min-width: 576px) and (max-width: 1024px)" type="image/png">
                 <source srcset="assets/images/theme/orange/about-img-sm.webp 1x, assets/images/theme/orange/about-img-sm@x2.webp 2x"
-                        media="(max-width: 390px)" type="image/webp">
+                        media="(max-width: 576px)" type="image/webp">
                 <source srcset="assets/images/theme/orange/about-img-sm.png 1x, assets/images/theme/orange/about-img-sm@x2.png 2x"
-                        media="(max-width: 390px)" type="image/png">
+                        media="(max-width: 576px)" type="image/png">
                 <img class="about__images" src="assets/images/theme/orange/about-img.png"
                      alt="Фоновое изображение" loading="lazy">
             </picture>
@@ -718,18 +750,17 @@
                 <div class="about__contact">
                     <ul class="about__list">
                         <li class="about__item">
-                            <a href="tel:+89028344590" title="Позвонить 8 (902) 834-45-90" class="about__link link">8
-                                (902) 834-45-90</a>
+                            <a href="tel:+89028344590" title="Позвонить 8 (902) 834-45-90" class="about__link link">Ваш телефонный номер</a>
                         </li>
 
                         <li class="about__item">
                             <a href="mailto:partner@gmail.com" title="Написать на partner@gmail.com"
-                               class="about__link link">partner@gmail.com</a>
+                               class="about__link link">Ваш почтовый адрес</a>
                         </li>
 
                         <li class="about__item">
                             <address class="about__address">
-                                г. Москва, Дмитриевское Шоссе 2а
+                                Ваш адрес и местоположение
                             </address>
                         </li>
                     </ul>
