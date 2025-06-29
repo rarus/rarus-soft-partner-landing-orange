@@ -1,0 +1,11 @@
+@layer orange;
+
+@layer orange {
+    :root {
+        --color1: #ff751b;
+        --color2: #ffb407;
+        --color3: #f6a366;
+        --button-background: radial-gradient(circle, #ff802d, #c82d0b);
+
+    }
+}
