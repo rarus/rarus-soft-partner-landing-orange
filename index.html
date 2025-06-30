@@ -27,22 +27,22 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a class="header__link" href="#" title="Продукты" target="_blank">
+                            <a class="header__link" href="#product" title="Продукты">
                                 Продукты
                             </a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#" title="Преимущества" target="_blank">
+                            <a class="header__link" href="#advantages" title="Преимущества">
                                 Преимущества
                             </a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#" title="Акции" target="_blank">
+                            <a class="header__link" href="#stock" title="Акции">
                                 Акции
                             </a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#" title="Контакты" target="_blank">
+                            <a class="header__link" href="#contact" title="Контакты">
                                 Контакты
                             </a>
                         </li>
@@ -55,8 +55,8 @@
                 <button type="button" class="modal__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerMenu">
                     <img class="dropdown__icon" src="assets/images/burger-menu.svg" alt="Открыть меню">
                 </button>
-                <div class="modal fade" id="partnerMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal__dialog-dropdown">
+                <div class="modal fade" id="partnerMenu" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="modal__menu">
@@ -108,7 +108,7 @@
                                         </li>
                                     </ul>
                                     <button class="button dropdown__button" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#partnerModal">
+                                            data-bs-target="#partnerModal" data-bs-dismiss="modal">
                                         Заказать
                                     </button>
                                 </div>
@@ -116,150 +116,148 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="partnerModalLabel" aria-hidden="true"
-         aria-modal="true" role="dialog">
-        <div class="modal__dialog modal-dialog modal-dialog-centered">
-            <div class="modal__content">
-                <picture class="modal__picture">
-                    <source srcset="assets/images/theme/orange/modal-img.webp 1x, assets/images/theme/orange/modal-img@x2.webp 2x"
-                            media="(min-width: 835px)" type="image/webp">
-                    <source srcset="assets/images/theme/orange/modal-img.png 1x, assets/images/theme/orange/modal-img@x2.png 2x"
-                            media="(min-width: 835px)" type="image/png">
-                    <source srcset="assets/images/theme/orange/modal-img-md.webp 1x, assets/images/theme/orange/modal-img-md@x2.webp 2x"
-                            media="(min-width: 481px)" type="image/webp">
-                    <source srcset="assets/images/theme/orange/modal-img-md.png 1x, assets/images/theme/orange/modal-img-md@x2.png 2x"
-                            media="(min-width: 481px)" type="image/png">
-                    <source srcset="assets/images/theme/orange/modal-img-sm.webp 1x, assets/images/theme/orange/modal-img-sm@x2.webp 2x"
-                            media="(max-width: 480px)" type="image/webp">
-                    <source srcset="assets/images/theme/orange/modal-img-sm.png 1x, assets/images/theme/orange/modal-img-sm@x2.png 2x"
-                            media="(max-width: 480px)" type="image/png">
-                    <img class="modal__image" src="assets/images/theme/orange/modal-img.png"
-                         alt="Фоновое изображение" loading="lazy">
-                </picture>
-                <div class="modal__block">
-                    <div class="modal__header">
-                        <h2 class="modal__title title" id="partnerModalLabel">Заявка на консультацию</h2>
-                        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                            <svg class="modal__cross" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_458_1053)">
-                                    <path class="modal-bg-cross"
-                                          d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
-                                          fill="#0E0D0C"/>
-                                    <path d="M40.8269 16.4063L16.0781 41.155L19.1717 44.2486L43.9205 19.4999L40.8269 16.4063Z"
-                                          fill="#FBFBFB"/>
-                                    <path d="M43.9206 41.4526L19.1719 16.7039L16.0783 19.7975L40.827 44.5462L43.9206 41.4526Z"
-                                          fill="#FBFBFB"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_458_1053">
-                                        <rect width="60" height="60" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="modal__body">
-                        <form action="#" method="post">
-                            <fieldset class="modal__items">
-                                <div class="modal__item">
-                                    <label for="recipient-name" class="modal__label visually-hidden">ФИО</label>
-                                    <input type="text"
-                                           class="modal__description modal__description--error"
-                                           id="recipient-name"
-                                           placeholder="ФИО"
-                                           autocomplete="name"
-                                           aria-required="true"
-                                           aria-invalid="true"
-                                           aria-describedby="name-error"
-                                           required>
+                <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="partnerModalLabel" aria-hidden="true"
+                     aria-modal="true" role="dialog">
+                    <div class="modal__dialog modal-dialog modal-dialog-centered">
+                        <div class="modal__content">
+                            <picture class="modal__picture">
+                                <source srcset="assets/images/theme/orange/modal-img.webp 1x, assets/images/theme/orange/modal-img@x2.webp 2x"
+                                        media="(min-width: 835px)" type="image/webp">
+                                <source srcset="assets/images/theme/orange/modal-img.png 1x, assets/images/theme/orange/modal-img@x2.png 2x"
+                                        media="(min-width: 835px)" type="image/png">
+                                <source srcset="assets/images/theme/orange/modal-img-md.webp 1x, assets/images/theme/orange/modal-img-md@x2.webp 2x"
+                                        media="(min-width: 481px)" type="image/webp">
+                                <source srcset="assets/images/theme/orange/modal-img-md.png 1x, assets/images/theme/orange/modal-img-md@x2.png 2x"
+                                        media="(min-width: 481px)" type="image/png">
+                                <source srcset="assets/images/theme/orange/modal-img-sm.webp 1x, assets/images/theme/orange/modal-img-sm@x2.webp 2x"
+                                        media="(max-width: 480px)" type="image/webp">
+                                <source srcset="assets/images/theme/orange/modal-img-sm.png 1x, assets/images/theme/orange/modal-img-sm@x2.png 2x"
+                                        media="(max-width: 480px)" type="image/png">
+                                <img class="modal__image" src="assets/images/theme/orange/modal-img.png"
+                                     alt="Фоновое изображение" loading="lazy">
+                            </picture>
+                            <div class="modal__block">
+                                <div class="modal__header">
+                                    <h2 class="modal__title title" id="partnerModalLabel">Заявка на консультацию</h2>
+                                    <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                                        <svg class="modal__cross" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_458_1053)">
+                                                <path class="modal-bg-cross"
+                                                      d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+                                                      fill="#0E0D0C"/>
+                                                <path d="M40.8269 16.4063L16.0781 41.155L19.1717 44.2486L43.9205 19.4999L40.8269 16.4063Z"
+                                                      fill="#FBFBFB"/>
+                                                <path d="M43.9206 41.4526L19.1719 16.7039L16.0783 19.7975L40.827 44.5462L43.9206 41.4526Z"
+                                                      fill="#FBFBFB"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_458_1053">
+                                                    <rect width="60" height="60" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="modal__item">
-                                    <label for="recipient-tel" class="modal__label visually-hidden">Телефон</label>
-                                    <input type="tel"
-                                           class="modal__description"
-                                           id="recipient-tel"
-                                           placeholder="Телефон"
-                                           autocomplete="tel"
-                                           aria-required="true"
-                                           aria-invalid="true"
-                                           aria-describedby="tel-error"
-                                           required>
+                                <div class="modal__body">
+                                    <form action="#" method="post">
+                                        <fieldset class="modal__items">
+                                            <div class="modal__item">
+                                                <label for="recipient-name" class="modal__label visually-hidden">ФИО</label>
+                                                <input type="text"
+                                                       class="modal__description modal__description--error"
+                                                       id="recipient-name"
+                                                       placeholder="ФИО"
+                                                       autocomplete="name"
+                                                       aria-required="true"
+                                                       aria-invalid="true"
+                                                       aria-describedby="name-error"
+                                                       required>
+                                            </div>
+                                            <div class="modal__item">
+                                                <label for="recipient-tel" class="modal__label visually-hidden">Телефон</label>
+                                                <input type="tel"
+                                                       class="modal__description"
+                                                       id="recipient-tel"
+                                                       placeholder="Телефон"
+                                                       autocomplete="tel"
+                                                       aria-required="true"
+                                                       aria-invalid="true"
+                                                       aria-describedby="tel-error"
+                                                       required>
+                                            </div>
+                                            <div class="modal__item">
+                                                <label for="recipient-email" class="modal__label visually-hidden">Эл. почта</label>
+                                                <input type="email"
+                                                       class="modal__description"
+                                                       id="recipient-email"
+                                                       placeholder="Эл. почта"
+                                                       autocomplete="email"
+                                                       aria-required="true"
+                                                       aria-invalid="true"
+                                                       aria-describedby="email-error"
+                                                       required>
+                                            </div>
+                                            <div class="modal__item">
+                                                <label for="message-text" class="modal__label visually-hidden">Ваш
+                                                    комментарий</label>
+                                                <textarea class="modal__description modal__description--textaria"
+                                                          id="message-text"
+                                                          name="comment"
+                                                          aria-required="true"
+                                                          aria-invalid="true"
+                                                          placeholder="Ваш комментарий"></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="modal__policy">
+                                            <div class="modal__check">
+                                                <input class="modal__checkbox"
+                                                       type="checkbox"
+                                                       id="flexCheckDefault"
+                                                       name="policy"
+                                                       required>
+                                                <label class="modal__label"
+                                                       for="flexCheckDefault">
+                                                    Ознакомлен с <a href="#" class="modal__link link" target="_blank"
+                                                                    title="Политика конфиденциальности">Политикой в отношении
+                                                    обработки персональных данных</a>
+                                                </label>
+                                            </div>
+                                            <div class="modal__check">
+                                                <input class="modal__checkbox"
+                                                       type="checkbox"
+                                                       id="flexCheckChecked"
+                                                       name="consent"
+                                                       required>
+                                                <label class="modal__label"
+                                                       for="flexCheckChecked">
+                                                    Даю <a href="#" class="modal__link link" target="_blank"
+                                                           title="Согласие на обработку персональных данных">согласие на обработку персональных данных</a>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <div class="modal__footer">
+                                            <button type="submit" class="button modal-button">Отправить</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="modal__item">
-                                    <label for="recipient-email" class="modal__label visually-hidden">Эл. почта</label>
-                                    <input type="email"
-                                           class="modal__description"
-                                           id="recipient-email"
-                                           placeholder="Эл. почта"
-                                           autocomplete="email"
-                                           aria-required="true"
-                                           aria-invalid="true"
-                                           aria-describedby="email-error"
-                                           required>
-                                </div>
-                                <div class="modal__item">
-                                    <label for="message-text" class="modal__label visually-hidden">Ваш
-                                        комментарий</label>
-                                    <textarea class="modal__description modal__description--textaria"
-                                              id="message-text"
-                                              name="comment"
-                                              aria-required="true"
-                                              aria-invalid="true"
-                                              placeholder="Ваш комментарий"></textarea>
-                                </div>
-                            </fieldset>
-                            <fieldset class="modal__policy">
-                                <div class="modal__check">
-                                    <input class="modal__checkbox"
-                                           type="checkbox"
-                                           id="flexCheckDefault"
-                                           name="policy"
-                                           required>
-                                    <label class="modal__label"
-                                           for="flexCheckDefault">
-                                        Ознакомлен с <a href="#" class="modal__link link" target="_blank"
-                                                        title="Политика конфиденциальности">Политикой в отношении
-                                        обработки персональных данных</a>
-                                    </label>
-                                </div>
-                                <div class="modal__check">
-                                    <input class="modal__checkbox"
-                                           type="checkbox"
-                                           id="flexCheckChecked"
-                                           name="consent"
-                                           required>
-                                    <label class="modal__label"
-                                           for="flexCheckChecked">
-                                        Даю <a href="#" class="modal__link link" target="_blank"
-                                               title="Согласие на обработку персональных данных">согласие на обработку персональных данных</a>
-                                    </label>
-                                </div>
-                            </fieldset>
-                            <div class="modal__footer">
-                                <button type="submit" class="button modal-button">Отправить</button>
                             </div>
-                        </form>
+                            <!--Раскомментируйте код для использования сообщение об успешной отправке формы
+
+                            <div class="modal__success">
+                               <div class="modal__container">
+                                    <p class="modal__title title">Ваша заявка принята!</p>
+                                   <p class="modal__title title">Мы свяжемся с вами в&nbsp;ближайшее время</p>
+                                </div>
+                           </div>
+                           -->
+                        </div>
                     </div>
                 </div>
-                <!--Раскомментируйте код для использования сообщение об успешной отправке формы
-
-                <div class="modal__success">
-                   <div class="modal__container">
-                        <p class="modal__title title">Ваша заявка принята!</p>
-                       <p class="modal__title title">Мы свяжемся с вами в&nbsp;ближайшее время</p>
-                    </div>
-               </div>
-               -->
             </div>
         </div>
     </div>
 </header>
-
 <main>
     <div class="container">
         <section class="transition">
@@ -394,7 +392,7 @@
                 </div>
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <h2 class="advantages__title title">Преимущества</h2>
             <div class="advantages__block">
                 <div class="advantages__item">
@@ -551,7 +549,7 @@
             </div>
         </section>
         <section class="portfolio" id="portfolio">
-            <h2 class="portfolio__title title">Продуктовый портфель</h2>
+            <h2 class="portfolio__title title" id="product">Продуктовый портфель</h2>
             <div class="portfolio__block">
                 <h3 class="portfolio__description portfolio__info">Информационная безопасность</h3>
                 <div class="portfolio__items">
@@ -669,7 +667,7 @@
             </div>
         </section>
         <section class="special">
-            <h2 class="special__title title">Специальные предложения</h2>
+            <h2 class="special__title title" id="stock">Специальные предложения</h2>
             <div class="special__block">
                 <picture class="special__picture">
                     <source srcset="assets/images/theme/orange/special-img.webp 1x, assets/images/theme/orange/special-img@x2.webp 2x"
@@ -726,7 +724,7 @@
                         class="benefit__law">российского законодательства</span></div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="contact">
             <picture class="about__picture">
                 <source srcset="assets/images/theme/orange/about-img.webp 1x, assets/images/theme/orange/about-img@x2.webp 2x"
                         media="(min-width: 1200px)" type="image/webp">

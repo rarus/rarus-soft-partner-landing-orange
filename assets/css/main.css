@@ -2179,6 +2179,7 @@ h5 {
     justify-content: center;
     max-width: 1300px;
     margin: 1.75rem auto;
+    pointer-events: none;
 }
 
 .fade {
@@ -2221,7 +2222,6 @@ h5 {
 .modal-dialog-centered {
     display: flex;
     align-items: center;
-    /*min-height: calc(100% - 1rem);*/
     min-height: 100%
 }
 
@@ -2651,5 +2651,4 @@ h5 {
     outline: 0;
     pointer-events: auto;
     position: relative;
-    background: #0d6efd;
 }
