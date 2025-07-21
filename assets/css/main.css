@@ -39,7 +39,6 @@ h5 {
 
 @media (max-width: 834px) {
     .container {
-        max-width: 774px;
         padding: 0 30px;
     }
 }
@@ -92,14 +91,12 @@ h5 {
 
 .header__images {
     display: block;
-    width: 220px;
-    height: 38px;
+    max-width: 100%;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 1024px) {
     .header__images {
-        max-width: 115px;
-        width: 100%;
+        max-width: 162px;
     }
 }
 
@@ -196,6 +193,15 @@ h5 {
 
 .dropdown__button {
     padding: 26px 68px;
+}
+
+@media (max-width: 576px) {
+
+    .dropdown__button {
+        width: 100%;
+        padding: 16px 68px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1541,6 +1547,7 @@ h5 {
     .about__block {
         padding: 82px 80px;
         grid-column-gap: 40px;
+        grid-row-gap: 60px;
     }
 }
 
@@ -1586,15 +1593,12 @@ h5 {
 
 .about__image {
     display: block;
-    max-width: 100%;
-
 }
 
 @media (min-width: 834px) {
     .about__image {
         grid-column: 1;
         grid-row: 1;
-        margin-bottom: 105px;
     }
 }
 
@@ -1720,7 +1724,7 @@ h5 {
 
 @media (min-width: 834px) {
     .modal__header {
-        margin-bottom: 62px;
+        margin-bottom: 40px;
     }
 }
 
@@ -1742,27 +1746,16 @@ h5 {
     cursor: pointer;
 }
 
+.modal__cross {
+    width: 34px;
+    height: 34px;
+}
+
 @media (max-width: 480px) {
 
     .modal__cross {
         width: 30px;
         height: 30px;
-    }
-}
-
-@media (min-width: 480px) {
-
-    .modal__cross {
-        width: 34px;
-        height: 34px;
-    }
-}
-
-@media (min-width: 834px) {
-
-    .modal__cross {
-        width: 46px;
-        height: 46px;
     }
 }
 
@@ -1783,21 +1776,21 @@ h5 {
 
 @media (min-width: 834px) {
     .modal__title {
-        font-size: 54px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 36px;
     }
 }
 
 @media (max-width: 834px) {
     .modal__title {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 36px;
     }
 }
 
 @media (max-width: 480px) {
     .modal__title {
-        font-size: 23px;
+        font-size: 22px;
         line-height: 26px;
     }
 }
@@ -1806,6 +1799,7 @@ h5 {
     width: 100%;
     border-radius: 7px;
     background-color: #f3f4f5;
+    pointer-events: auto;
 }
 
 @media (max-width: 480px) {
@@ -1824,21 +1818,21 @@ h5 {
 .modal__items {
     display: flex;
     flex-direction: column;
-    margin-bottom: 62px;
+    margin-bottom: 24px;
     border: none;
     padding: 0;
 }
 
 @media (min-width: 834px) {
     .modal__items {
-        gap: 35px;
+        gap: 24px;
     }
 }
 
 @media (max-width: 834px) {
     .modal__items {
-        gap: 12px;
-        margin-bottom: 34px;
+        gap: 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -1850,7 +1844,7 @@ h5 {
 }
 
 .modal__policy {
-    margin-bottom: 54px;
+    margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
     border: none;
@@ -1861,7 +1855,7 @@ h5 {
     .modal__policy {
         display: flex;
         flex-direction: column;
-        gap: 22px;
+        gap: 12px;
     }
 }
 
@@ -1869,8 +1863,8 @@ h5 {
     .modal__policy {
         display: flex;
         flex-direction: column;
-        gap: 22px;
-        margin-bottom: 31px;
+        gap: 12px;
+        margin-bottom: 40px;
     }
 }
 
@@ -1889,39 +1883,16 @@ h5 {
     bottom: 0;
 }
 
-@media (min-width: 390px) {
+
+@media (min-width: 576px) {
     .modal__block {
-        padding: 26px 20px 13px 19px;
+        padding: 58px 70px 44px 56px;
     }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 576px) {
     .modal__block {
-        padding: 26px 50px 27px 19px;
-    }
-}
-
-@media (min-width: 768px) {
-    .modal__block {
-        padding: 28px 70px 25px 44px;
-    }
-}
-
-@media (min-width: 834px) {
-    .modal__block {
-        padding: 28px 70px 21px 44px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .modal__block {
-        padding: 75px 70px 46px 70px;
-    }
-}
-
-@media (max-width: 390px) {
-    .modal__block {
-        padding: 26px 50px 13px 19px;
+        padding: 32px 20px 32px 20px;
     }
 }
 
@@ -1931,7 +1902,7 @@ h5 {
     font-weight: 600;
     color: #464645;
     display: block;
-    width: 587px;
+    width: 400px;
     border-radius: 4px;
     resize: none;
     font-family: Raleway, Arial, sans-serif;
@@ -1944,10 +1915,9 @@ h5 {
 @media (min-width: 834px) {
 
     .modal__description {
-        max-width: 100%;
-        padding: 21px 46px;
-        font-size: 32px;
-        line-height: 34px;
+        padding: 12px 20px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 
@@ -1955,7 +1925,7 @@ h5 {
 
     .modal__description {
         max-width: 376px;
-        padding: 11px 46px;
+        padding: 12px 20px;
         font-size: 20px;
         line-height: 22px;
     }
@@ -1974,7 +1944,6 @@ h5 {
 @media (max-width: 480px) {
 
     .modal__description {
-        max-width: 158px;
         padding: 11px 10px;
         font-size: 14px;
         line-height: 15px;
@@ -1995,14 +1964,14 @@ h5 {
 
 @media (min-width: 834px) {
     .modal__description--textaria {
-        height: 193px;
+        height: 152px;
     }
 }
 
 @media (max-width: 834px) {
     .modal__description--textaria {
-        height: 62px;
-        padding: 17px 46px;
+        height: 152px;
+        padding: 12px 20px;
     }
 }
 
@@ -2019,27 +1988,23 @@ h5 {
     }
 }
 
-@media (min-width: 834px) {
-
-    .modal__check {
-        display: flex;
-        align-items: center;
-        gap: 22px;
-    }
+.modal__check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 @media (max-width: 834px) {
 
     .modal__check {
-        display: flex;
-        gap: 22px;
+
     }
 }
 
 @media (max-width: 480px) {
 
     .modal__check {
-        gap: 10px;
+        gap: 12px;
     }
 }
 
@@ -2049,17 +2014,16 @@ h5 {
 
 @media (min-width: 834px) {
     .modal__label {
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 16px;
         max-width: 650px;
     }
 }
 
 @media (max-width: 834px) {
     .modal__label {
-        font-size: 19px;
-        line-height: 22px;
-        max-width: 355px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
@@ -2081,28 +2045,21 @@ h5 {
 
 .modal__checkbox[type=checkbox] {
     background-color: #464645;
-    border-radius: 8px;
+    border-radius: 4px;
     margin: 0;
 }
 
 @media (min-width: 834px) {
     .modal__checkbox[type=checkbox] {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
 }
 
 @media (max-width: 834px) {
     .modal__checkbox[type=checkbox] {
-        width: 36px;
-        height: 36px;
-    }
-}
-
-@media (max-width: 480px) {
-    .modal__checkbox[type=checkbox] {
-        width: 27px;
-        height: 27px;
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -2112,19 +2069,22 @@ h5 {
 }
 
 .modal-button {
-    padding: 26px 68px;
+    padding: 21px 64px;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 @media (max-width: 834px) {
     .modal-button {
         font-size: 20px;
-        line-height: 24px;
-        padding: 14px 28px;
+        line-height: 32px;
+        padding: 12px 64px;
     }
 }
 
 @media (max-width: 480px) {
     .modal-button {
+        width: 100%;
         font-size: 18px;
         line-height: 20px;
         padding: 9px 31px;
@@ -2145,6 +2105,10 @@ h5 {
     flex-direction: column;
     justify-content: center;
     padding: 30% 240px 25% 70px;
+}
+
+.fade {
+    transition: opacity .15s linear;
 }
 
 .fade:not(.show) {
@@ -2177,18 +2141,13 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1300px;
+    max-width: 798px;
     margin: 1.75rem auto;
-    pointer-events: none;
-}
-
-.fade {
-    transition: opacity .15s linear;
 }
 
 @media (max-width: 834px) {
     .modal-dialog {
-        margin: 1.75rem auto;
+        max-width: 774px;
     }
 }
 
@@ -2208,7 +2167,7 @@ h5 {
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .modal-backdrop.fade {
@@ -2364,27 +2323,28 @@ h5 {
 @media (max-width: 834px) {
 
     .modal-link {
-        font-size: 32px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700;
     }
 }
 
 @media (max-width: 576px) {
 
     .modal-link {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
 .modal__element {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 576px) {
 
     .modal__element {
-        margin-bottom: 30px;
+        margin-bottom: 32px;
     }
 }
 
@@ -2392,15 +2352,8 @@ h5 {
     margin-bottom: 0;
 }
 
-@media (max-width: 834px) {
-
-    .modal__element:last-child {
-        margin-bottom: 83px;
-    }
-}
-
 .modal__elements {
-    margin-bottom: 119px;
+    margin-bottom: 48px;
 }
 
 
@@ -2508,9 +2461,9 @@ h5 {
         max-width: 390px;
     }
 }
+
 .modal__menu {
     background-color: #fff;
-
 }
 
 @media (max-width: 834px) {
@@ -2525,29 +2478,21 @@ h5 {
 
     .modal__menu {
         width: 360px;
-        padding: 45px 23px 73px 42px;
-    }
-}
-
-@media (min-width: 834px) {
-
-    .modal__menu {
-        width: 834px;
-        padding: 65px 47px 119px 82px;
+        padding: 40px 20px 48px 20px;
     }
 }
 
 @media (max-width: 834px) {
 
     .modal__images {
-        width: 330px;
+        width: 220px;
     }
 }
 
 @media (max-width: 576px) {
 
     .modal__images {
-        width: 220px;
+        width: 95px;
     }
 }
 
@@ -2555,13 +2500,13 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 94px;
+    margin-bottom: 48px;
 }
 
 @media (max-width: 576px) {
 
     .modal__main {
-        margin-bottom: 76px;
+        margin-bottom: 40px;
     }
 }
 
@@ -2577,7 +2522,7 @@ h5 {
 @media (max-width: 834px) {
 
     .modal__close {
-        width: 42px;
+        width: 60px;
     }
 }
 
@@ -2585,6 +2530,7 @@ h5 {
 
     .modal__close {
         width: 40px;
+        height: 40px;
     }
 }
 
@@ -2626,24 +2572,14 @@ h5 {
 .modal__checkbox:checked::after {
     content: '';
     position: absolute;
-    left: 12px;
+    left: 6px;
     top: 0;
-    width: 17px;
-    height: 30px;
+    width: 10px;
+    height: 18px;
     border: solid var(--color1);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     pointer-events: none;
-}
-
-@media (max-width: 480px) {
-
-    .modal__checkbox:checked::after {
-        left: 7px;
-        top: 0;
-        width: 15px;
-        height: 24px;
-    }
 }
 
 .modal-content {
